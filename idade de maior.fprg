@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="idade de maior"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 03:07:49 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMTI6NTQ6NDkgIjsyNjU4"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMDM6MDc6NDkgIjs1OzI3Njg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Uma idade deve ser insirida"/>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira a sua idade&quot;" newline="True"/>
+            <input variable="idade"/>
+            <comment text="A idade deve ser maior que 18 anos para ser de maior"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="&quot;voc&#234; &#233; de maior&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;voc&#234; &#233; de menor&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="valor com desconto"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 02:29:38 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6MjQ6NTQgIjsyNjQ5"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMDI6Mjk6MzggIjsyOzI3NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o valor da compra&quot;" newline="True"/>
+            <input variable="valor"/>
+            <comment text="Se o valor for maior ou igual a 100 o produto tera desconto"/>
+            <if expression="valor &gt;= 100">
+                <then>
+                    <comment text="Se o numero realmente for maior ou igual a 100 o desconto devera ser aplicado"/>
+                    <output expression="&quot;O valor com desconto sera&quot; &amp; valor*0.9" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O produto n&#227;o tera desconto&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

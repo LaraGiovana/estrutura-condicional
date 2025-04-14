@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="multiplo de 5"/>
+        <attribute name="authors" value="DES-I1HS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 01:18:52 "/>
+        <attribute name="created" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6MDY6MjEgIjsyNjQz"/>
+        <attribute name="edited" value="REVTLUkxSFM7RVNONTEyTkJOVEI3NzQ7MjAyNS0wNC0wNzsiMDE6MTg6NTIgIjsyOzI3NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Real" array="False" size=""/>
+            <comment text="Um numero deve ser escolhido"/>
+            <output expression="&quot;Insira o seu numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <comment text="Para descobrir se o numero &#233; multiplo de 5 a conta de divis&#227;o tem que ser igual a 0"/>
+            <if expression="numero % 5 == 0">
+                <then>
+                    <output expression="&quot;O numero escolhido &#233; multiplo de 5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;o numero escolhido n&#227;o &#233; multiplo de 5&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
